@@ -1,0 +1,11 @@
+<div class="module imageaddon" ng-controller="ImageController">
+
+  <div ng-bind-html="imageaddon.modulescope.value"></div>
+
+  <div class="imgContainer">
+    <img src="{{ imageaddon.modulescope.imageFile }}">
+  </div>
+
+  <div ng-include="imageaddonTemplate">
+
+</div>

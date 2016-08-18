@@ -1,0 +1,69 @@
+{
+
+      "name": "Image Addon",
+      "identifier": "imageaddon",
+      "description": {
+        "es-ES": "Muestra una imagen.",
+        "en-US": "Show an image."
+      }, 
+      "documentation": {
+        "es-ES": "",
+        "en-US": ""
+      },
+      "descriptionShort": {
+        "es-ES": "Muestra una imagen",
+        "en-US": "Show an image"
+      },
+      "icon": "perm-media",
+      "type": "A",
+      "version" : "1.0",
+      "author" : "King of App",
+      "category" : [
+          "others"
+      ],
+      "price" : 0,
+      "subscription": false,
+      "canContain": true,
+      "platforms" : [
+          "android",
+          "ios",
+          "windows"
+      ],
+      "view" : "modules/imageaddon/index.html",
+      "files": [
+        "modules/imageaddon/controller.js",
+        "modules/imageaddon/imageaddonStyles.html"
+      ],
+      "scope": {
+        "value" : "",
+        "imageFile": ""
+      },
+      "config" : [
+          {
+            "type": "input",
+            "key": "imageFile",
+            "templateOptions": {
+              "description": "URL of your image",
+              "required": true,
+              "label": "Image",
+              "pattern": "https?:\/\/(www\\.)?[-a-zA-Z0-9@:%._\\+~#=]{2,256}\\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\\+.~#?&\/=]*).(jpe?g|gif|" 
+            }
+          }
+      ],
+      "showOn" : {
+          "menu" : true,
+          "market" : true,
+          "dragDrop" : true
+      },
+      "images": {
+        "list": "modules/imageaddon/images/image_addon_list.png",
+        "screenshots": [
+          "modules/imageaddon/images/image_addon_screenshot01.png",
+          "modules/imageaddon/images/image_addon_screenshot02.png"
+        ],
+        "popover": "modules/imageaddon/images/image_addon_popover.png",
+        "banner": "modules/imageaddon/images/image_addon_banner.png",
+        "logo": "modules/imageaddon/images/image_addon_logo.png"
+      }
+    },
+}
